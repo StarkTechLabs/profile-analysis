@@ -1,0 +1,58 @@
+logs/
+*.log
+output/
+build/
+.vscode/
+
+# Config
+
+config.json
+config.sh
+config.bat
+
+
+# Babel
+.babel_cache/
+
+
+# Python gitignore 
+
+# Byte-compiled
+__pycache__/ 
+*.py[cod]
+*$py.class
+
+# Packages & Distribution
+bin/
+include/
+build/
+.Python
+
+
+# Installer logs
+pip-log.txt
+
+# Flask stuff:
+instance/
+.webassets-cache
+
+
+# pyenv
+.python-version
+
+# celery beat schedule file
+celerybeat-schedule
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+
+
+# output data
+output/
+
+data/
+input/

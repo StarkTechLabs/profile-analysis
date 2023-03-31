@@ -11,8 +11,14 @@ Collection of python code to pull data from twitter and compare two twitter prof
 ### Environment Variables
 
 - TWITTER_APP_TOKEN - bearer token from twitter developer console
-- PINECONE_API_KEY - pinecode api key to access embeddings index
+- PINECONE_API_KEY - pinecone api key to access embeddings index
 
 ### Running
 
-`python run.py -d`
+#### Loading Profiles
+
+`python loader.py <username>`
+
+#### Query Vectors
+
+`python query.py <username>`

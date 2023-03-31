@@ -14,13 +14,13 @@ def analyze(usernameOne: str, usernameTwo: str):
     return {}
 
 
-def find_vector(id: str):
-    return index.fetch([id], namespace='content')
+def find_vector(id: str, namespace: str = 'content'):
+    return index.fetch([id], namespace=namespace)
 
 
-def query_vector(data):
-    result = index.query([data], namespace='content',
-                         top_k=3)
+def query_vector(data, namespace: str = 'content', top_k: int = 5):
+    result = index.query([data], namespace=namespace,
+                         top_k=top_k)
     return result
 
 

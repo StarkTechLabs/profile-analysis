@@ -1,5 +1,5 @@
 #
-from .util import get
+from util import get
 
 
 def tweet_by_id(id: str):
@@ -14,7 +14,8 @@ def tweet_by_id(id: str):
 def tweets_by_user(username: str):
     url_path = "/tweets/search/recent"
     params = {
-        "query": "from:{0} -is:retweet".format(username),
+        "query": "from:{0}".format(username),
+        "max_results": 100,
     }
     result = get(url_path, params=params)
     if not result["ok"]:
@@ -25,5 +26,5 @@ def tweets_by_user(username: str):
 
 
 if __name__ == "__main__":
-    res = tweet_by_id('1592986761705459712')
-    print(res)
+    res = tweets_by_user('starktechdev')
+    print(len(res))

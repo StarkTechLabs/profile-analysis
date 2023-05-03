@@ -1,6 +1,7 @@
-# profile-analysis
+# docsx-py
 
-Collection of python code to pull data from twitter and compare two twitter profiles to one another. Will be expanded to profiles outside of twitter and possibly used to search for similar profiles of a given profile.
+- loader.py - Collection of python code to calculate vector embeddings for given data and upsert them into pinecone.
+- analysis.py - Another function to build a question-answer system based on pinecone vectors.
 
 ## Setup
 
@@ -10,15 +11,4 @@ Collection of python code to pull data from twitter and compare two twitter prof
 
 ### Environment Variables
 
-- TWITTER_APP_TOKEN - bearer token from twitter developer console
 - PINECONE_API_KEY - pinecone api key to access embeddings index
-
-### Running
-
-#### Loading Profiles
-
-`python loader.py <username>`
-
-#### Query Vectors
-
-`python query.py <username>`

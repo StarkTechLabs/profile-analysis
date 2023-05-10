@@ -1,6 +1,7 @@
 autopep8==1.7.0
 nltk==3.7
 Flask==2.2.2
+lask-cors==3.0.10
 regex==2022.8.17
 urllib3==1.26.12
 numpy==1.21.6

@@ -12,6 +12,8 @@ def handler(request):
     vector_result = query_vector(query, top_k=1, namespace=data['namespace'])
 
     context = get_context(vector_result['matches'])
+    print('context')
+    print(context)
     query = format_query(query, vector_result['matches'])
 
     answer = generate_answer(query)

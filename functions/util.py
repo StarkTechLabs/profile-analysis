@@ -42,8 +42,9 @@ def format_query(query, context):
     context = [f" {m['metadata']['content']}" for m in context]
     # concatenate all context
     context = " ".join(context)
+
     # concatenate the query and context
-    query = f"question: {query} context: {context}"
+    query = f"Using this context as a reference: {context}\n\n please answer this question: {query}"
     return query
 
 
